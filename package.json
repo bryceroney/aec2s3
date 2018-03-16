@@ -13,6 +13,7 @@
     "xml2js": "^0.4.19"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "start-timed": "timeout 30s node index.js"
   }
 }
