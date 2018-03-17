@@ -59,7 +59,7 @@ function processData() {
 				})
 
 				// TCP VOTES
-				if(i.TwoCandidatePreferred[0]['$']['Restricted'] == 'true') {
+				if(i.TwoCandidatePreferred[0].hasOwnProperty('&') && i.TwoCandidatePreferred[0]['$']['Restricted'] == 'true') {
 					results['TCP_ALP'] = 0;
 					results['TCP_LP'] = 0;
 				} else {
